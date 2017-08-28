@@ -4,14 +4,30 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="ys.grad.mytalk.MainActivity">
+    tools:context="ys.grad.mytalk.StartActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/start_img"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_centerInParent="true"
+        android:clickable="false"
+        android:src="@drawable/talk" />
+
+    <TextView
+        android:id="@+id/start_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start_img"
+        android:layout_centerHorizontal="true"
+        android:clickable="false"
+        android:textAlignment="center"
+        android:text="Hello User!"
+        android:textColor="@color/black" />
+
 </RelativeLayout>
