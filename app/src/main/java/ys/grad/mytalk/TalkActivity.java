@@ -3,6 +3,7 @@ package ys.grad.mytalk;
 import android.accessibilityservice.AccessibilityService;
 import android.app.Activity;
 import android.app.Service;
+import android.content.Intent;
 import android.inputmethodservice.KeyboardView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -39,6 +40,8 @@ public class TalkActivity extends Activity implements View.OnClickListener {
         talkAdapter = new TalkAdapter(talks);
         talkRecyclerview.setAdapter(talkAdapter);
         talkRecyclerview.setLayoutManager(new LinearLayoutManager(this));
+        Intent intent = new Intent(getApplicationContext(), StartActivity.class);
+        startActivity(intent);
     }
 
     @Override
