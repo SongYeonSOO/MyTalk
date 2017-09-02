@@ -5,7 +5,8 @@
     <color name="colorAccent">#FF4081</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
-    <color name="bgdActionBar">#33C0E0FF</color>
+    <color name="bgdActionBar">#C0E0FF</color>
     <color name="bgdMyTalk">#76CAEE</color>
     <color name="bgdOtherTalk">#7DBA43</color>
+    <color name="bgdTime">#BEC3C6</color>
 </resources>
